@@ -90,15 +90,17 @@ main {
     flex-direction: row;
 }
 
-.contenedor-shop .container{
+.contenedor-shop {
 display: flex;
 flex-direction: column;
 
 }
 
 aside{
+    display: flex;
     width: 20%;
     margin-left: 50px;
+    justify-content: end;
 }
 
 
@@ -180,11 +182,11 @@ form{
     margin-bottom: 5px;
 }
 input{
-    width:30px;
+    width:60px;
     text-align: center;
 }
 .entradas{
-    width: 150px;
+    width: 243px;
     text-align: center;
 }
 .checkbox__caja{
