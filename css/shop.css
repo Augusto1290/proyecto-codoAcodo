@@ -185,6 +185,7 @@ input{
 }
 .entradas{
     width: 150px;
+    text-align: center;
 }
 .checkbox__caja{
     display: grid;
