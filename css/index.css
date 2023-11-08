@@ -268,7 +268,7 @@ order:-1;
     text-transform: uppercase;
 
 }
-#icon {
+#icon{
     color: var(--dark-bg-solid);
     font-size: var(--font-small);
     font-weight: 700;
