@@ -141,6 +141,51 @@ header {
 }
 
 
+/* CAJA*/
+h1 {
+    font-family: var(--alternative-font);
+    font-weight: 700px;
+    height: 49px;
+    left: 115.55px;
+    font: size 42px;
+    line-height:49.31px; 
+    letter-spacing: 4%;
+    color:#1F1F1F;
+  }
+
+  .estilos{
+    color:#1F1F1F;
+    font-weight: 700px;
+    height: 49px;
+    align-items: center;
+    font-family: inherit;
+    font: size 42px;
+    line-height:49.31px; 
+    letter-spacing: 4%;
+    
+  }
+
+
+  .container{
+    align-content: 700;
+  }
+
+    .btn{
+        width: 175px;
+        height: 44.33px;
+        color: #fff;
+        padding: 5px 10px;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+        border: none;
+        background-color: #ef233c
+  }
+  
+  
+
+
 
 
 /* FOOTER*/

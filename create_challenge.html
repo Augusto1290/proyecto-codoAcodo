@@ -30,11 +30,86 @@
         </nav>
     </header> <!--Fin Header-->
 
+    <main class="container">
+        <section> <!--Comienzo Caja-->
+            <h1>CREAR NUEVO ITEM</h1>
+            <article>
+               <form action="">
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <label for="category">Categoría:</label>
+                        <select name="Categoría" id="category">
+                            <option value="Seleccionar">seleccionar</option>
+                            <option value="star wars">STAR WARS</option>
+                            <option value="pokemon">POKEMON</option>
+                            <option value="harry potter">HARRY POTTER</option>
+                        </select>
 
+                        <label for="licence">Licencia:</label>
+                        <select name="Licencia" id="licence">
+                            <option value="Seleccionar">seleccionar</option>
+                            <option value="star wars">Baby Yoda Blueball</option>
+                            <option value="star wars">Boba Fett Fighter</option>
+                            <option value="star wars">Luke Skylwalker & Grogu</option>
+                            <option value="star wars">Stormtrooper Lightsaber</option>
+                            <option value="pokemon">Charmander Smiley</option>
+                            <option value="pokemon">Dragonite Hi!</option>
+                            <option value="pokemon">Pidgeotto Flying</option>
+                            <option value="pokemon">Pikachu Smiley</option>
+                            <option value="pokemon">Vulpix Fancy</option>
+                            <option value="harry potter">Harry Potter & Hegwid</option>
+                            <option value="harry potter">Herminione Ball Dress</option>
+                            <option value="harry potter">Luna Lovegood Lion Mask</option>
+                            <option value="harry potter">Snape Patronus</option>
+                        </select>
+                    </div>
+                    <div class="estilos"> <!--pensar en las clases para los estilos-->
+                        <label for="product">Nombre del producto:</label>
+                        <select name="Nombre del producto" id="Nombre del producto"> 
+                            <option value="Seleccionar">Licencia</option> <!--Revisar-->
+                        </select> 
+                    </div>
 
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <textarea placeholder="Descripción del producto"></textarea>
+                    </div>
+                    
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <label for="code">SKU:</label>
+                        <input type="text" name="SKU" id="code" placeholder="SKU">
+                        <label for="price">Precio:</label>
+                        <input type="number" name="precio" id="precio" placeholder="Precio">
+                        <label for="stock">Stock:</label>
+                        <input type="number" name="stock" id="stock" placeholder="Stock">
+                    </div>
 
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <label for="descuento">Descuento:</label>
+                        <input type="number" name="descuento" id="Descuento" placeholder="Descuento">
+                        <label for="cuotas">Cuotas:</label>
+                        <select name="cuotas" id="cuotas">
+                            <option value="1">1 cuota sin interés</option>
+                            <option value="3">3 cuotas sin interés</option>
+                            <option value="6">6 cuotas sin interés</option>
+                        </select>
+                    </div>
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <label for="images">Imágenes:</label>
+                        <button type="button">Elegir archivos</button>
+                        <label for="file-upload" class="subir">
+                        <i class="fas fa-cloud-upload-alt"></i> No se ha seleccionado ningún archivo
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="estilos"><!--pensar en las clases para los estilos-->
+                        <button type="button" class="btn btn-primary" onclick="">Agregar Producto</button>
+                        <button type="button" class="btn btn-danger" onclick="">Limpiar</button> <!--Revisar-->
+                    </div>
+               </form>
+            </article>   
+        </section> <!--Fin Caja-->
 
-
+    </main>
 
 
 
@@ -63,5 +138,8 @@
         </nav>
        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer> <!--Fin Footer-->
+
+    
+
 </body>
 </html>
