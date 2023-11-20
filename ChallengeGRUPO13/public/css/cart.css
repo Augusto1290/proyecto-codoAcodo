@@ -229,7 +229,9 @@ header {
     margin-top: 20px;
 }
 
-.carrito__article__items--cant {}
+/*.carrito__article__items--cant {
+    
+}*/
 
 .carrito__article__items--price {
     font-size: 20px;
