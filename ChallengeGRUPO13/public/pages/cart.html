@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
     <script src="../js/cart.js"></script>
 </head>
+
 <body>
     <header> <!-- inicio header-->
         <nav class="navbar container">
@@ -46,16 +48,119 @@
             </ul>
         </nav>
     </header> <!-- fin header-->
-   
 
-<main class="main-container">
-    <section class="collection container">
-        <article class="collection__content">
-            <h3 class="title_cart  ">CARRITO DE COMPRAS </h3>
-        </article>
-        <table class="default" id="carrito">
-          </table>
-    </section>
+
+    <main class="container">
+        <section>
+            <div>
+                <h2 class="carrito__titles">Carrito de compras</h2>
+            </div>
+            <article class="carrito__article__head">
+                <span>
+                    <h6 class="carrito__article__head--tit--detalle">Detalle del producto</h6>
+                </span>
+                <span>
+                    <h6 class="carrito__article__head--tit">Cantidad</h6>
+                </span>
+                <span>
+                    <h6 class="carrito__article__head--tit">Total</h6>
+                </span>
+            </article>
+
+            <!--ARTICLE 1 -->
+
+            <article class="carrito__article_items">
+                <div class="carrito__article__items--product">
+                    <div>
+                        <img src="../img/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="carrito__article__items--product--title">Baby Yoda Blueball</li>
+                            <li class="carrito__article__items--product--license">Stars Wars</li>
+                            <li class="carrito__article__items--product--punit">Precio:$1799,99</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <input type=“number”>
+                </div>
+
+
+                <div class="carrito__article__items--price">
+                    $3599,98
+                </div>
+
+                <div class="carrito__article__items--delete">
+                    &#10683
+                </div>
+            </article>
+
+            <!--ARTICLE 2 -->
+
+            <article class="carrito__article_items">
+
+                <div class="carrito__article__items--product">
+                    <div>
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="carrito__article__items--product--title">Pidgeotto</li>
+                            <li class="carrito__article__items--product--license">Pokemon</li>
+                            <li class="carrito__article__items--product--punit">Precio:$1799,99</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <input type=“number”>
+                </div>
+                <div class="carrito__article__items--price">
+                    $1799,99
+                </div>
+                <div class="carrito__article__items--delete">
+                    &#10683
+                </div>
+            </article>
+
+
+        </section>
+
+        <section class="carrito__resumen">
+            <div>
+                <h2 class="carrito__resumen__title">Resumen</h2>
+            </div>
+
+            <div class="carrito__resumen__detalles">
+                <table class="carrito__resumen__tabla">
+                    <tr>
+                        <th class="carrito__resumen__subtit">Cantidad de elementos</th>
+                        <th class="carrito__resumen__cant">3</th>
+                    </tr>
+                    <tr>
+                        <th class="carrito__resumen__subtit">Subtotal</th>
+                        <th class="carrito__resumen__cant">$5399,97</th>
+                    </tr>
+                    <tr>
+                        <th class="carrito__resumen__subtit">Envío</th>
+                        <th class="carrito__resumen__cant">$0,00</th>
+                    </tr>
+                    <tr>
+                        <th class="carrito__resumen__pagar carrito__resumen__tabla--borde ">Total</th>
+                        <th class="carrito__resumen__monto-pagar carrito__resumen__tabla--borde">$5399,97</th>
+                    </tr>
+                </table>
+
+            </div>
+
+            <button class="carrito__boton__pagar">Ir a pagar</button>
+
+
+        </section>
+
+    </main>
+
 
     <footer class="footer"><!-- inicio footer -->
         <nav class="navbar container">
@@ -77,7 +182,8 @@
                 <img src="../img/branding/isotype.svg" alt="Isotipo de la marca funkoshop">
             </picture>
         </nav>
-    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-</footer> <!-- fin footer -->
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer> <!-- fin footer -->
 </body>
+
 </html>
