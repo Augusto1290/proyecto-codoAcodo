@@ -1,0 +1,105 @@
+.item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: var(--spacing-16) 0;
+}
+
+.item__info {
+    gap: var(--spacing-8);
+    
+}
+
+.item__licence {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    color: var(--dark-bg-solid);
+    font-weight: 500;
+}
+
+.item__name {
+    font-family: var(--base-font);
+    font-size: var(--font-jumbo);
+    color: var(--dark-solid);
+    font-weight: 700;
+}
+
+.item__description {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    color: var(--dark-bg-solid);
+    font-weight: 400;
+}
+
+.item__price {
+    font-family: var(--base-font);
+    font-size: var(--font-jumbo);
+    color: var(--dark-bg-solid);
+    font-weight: 400;
+}
+
+.item__cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__input {
+    align-items: center;
+    align-content: center;
+    font-family: var(--base-font);
+    font-size: var(---font-jumbo);
+    color: var(--dark-bg-solid);
+    font-weight: 500;
+    border: 0.5px solid rgba(201, 201, 201, 1);
+    margin-right: 5px;
+}
+
+.item__button {
+    display: flex ;
+    flex-direction: column-reverse;
+    width: var(--spacing-20);
+    height:  var(--spacing-20);
+    gap: 5px;    
+    justify-content: start;
+}
+
+.item__quantity {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__submit {
+    background-color: var(--primary-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
+    font-weight: 400;
+    padding: var(--spacing-16);
+    margin-left: var(--spacing-20);
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.item__submit:hover {
+    color: var(--light-font-solid);
+    background-color: var(--dark-bg-solid);
+}
+
+.item__promo {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    color: var(--secundary-solid);
+    font-weight: 700;
+}
+
+.item__promo a{
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    color: var(--secundary-solid);
+    font-weight: 700;
+    text-decoration-line: underline;
+}

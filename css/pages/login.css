@@ -1,0 +1,93 @@
+.main__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 36px;
+    gap: 36px;
+}
+
+.tittle__login{
+    color: var(--dark-solid);
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.password {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 22px
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 125px
+}
+
+.date {
+    color: var(--dark-solid);
+    text-align: right;
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    letter-spacing: 0.96px;
+}
+
+input {
+    color: var(--dark-300);
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-8);
+}
+
+.login {
+    align-items: center;
+}
+
+.button__login {
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    padding: var(--spacing-8);
+    align-items: center;
+}
+
+.recordarme {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+a {
+    color: var(--secundary-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    text-align: center;
+}
