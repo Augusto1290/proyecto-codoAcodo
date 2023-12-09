@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/index.html"><img src="../img/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la marca Funkoshop"></a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">SALIR</a>
+                </li>
+            </ul>
+            <button class="menu-btn">&#9776;</button>
+
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+
+
+            <div id="register-title">
+                <!-- Título "Lista de Productos" -->
+                <h1>CREA TU CUENTA</h1>
+                <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+
+
+                <main class="container mt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <form id="registroForm">
+                           <div class="form-group d-flex align-items-start">
+                            <label for="nombre" class="mr-2">Nombre:</label>
+                            <input type="text" class="form-control red-line" id="nombre" name="nombre" required>
+                          </div>
+                
+                          <div class="form-group d-flex align-items-center">
+                            <label for="apellido" class="mr-2">Apellido:</label>
+                            <input type="text" class="form-control red-line" id="apellido" name="apellido" required>
+                          </div>
+                
+                          <div class="form-group d-flex align-items-center">
+                            <label for="email" class="mr-2">Email:</label>
+                            <input type="email" class="form-control red-line" id="email" name="email" required>
+                          </div>
+                
+                          <div class="form-group d-flex align-items-center">
+                            <label for="contrasena" class="mr-2">Contraseña:</label>
+                            <input type="password" class="form-control red-line" id="contrasena" name="contrasena" required>
+                          </div>
+                
+                          <div class="form-group d-flex align-items-center">
+                            <label for="repetirContrasena" class="mr-2">Repita Contraseña:</label>
+                            <input type="password" class="form-control red-line" id="repetirContrasena" name="repetirContrasena" required>
+                          </div>
+                
+                
+                          <div class="form-group form-check row">
+                            <div class="col-sm-10 offset-sm-2">
+                              <button type="button" class="btn btn-success" onclick="registrar()">Registrar</button>
+                              <input type="checkbox" class="form-check-input" id="aceptoTerminos" name="aceptoTerminos" required>
+                              <label class="form-check-label mr-2" for="aceptoTerminos">Acepto Términos y Condiciones</label>
+                              
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </main>
+
+            
+
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="./pages/shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/register.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="./pages/contact.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../img/branding/isotype.svg" href="/index.html" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All right reserved 2023 - Funkoshop &copy</p>
+    </footer>
+    <script src="../js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
+
+</html>

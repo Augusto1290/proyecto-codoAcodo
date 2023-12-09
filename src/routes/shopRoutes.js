@@ -8,10 +8,12 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/",(req,res)=>res.send("shop"))
-router.get("/item/:id",(req,res)=>res.send("shop"))
-router.post("/item/:id/add",(req,res)=>res.send("shop"))
-router.get("/cart",(req,res)=>res.send("shop"))
-router.post("/cart*/",(req,res)=>res.send("shop"))
+const controller=require('../controllers/shop.controller')
+
+router.get("/",controller.shop)
+router.get("/item/:id", controller.item)
+router.post("/item/:id/add", controller.addItem)
+router.get("/cart", controller.cart)
+router.post("/cart*/", controller.addToCart)
 
 module.exports=router

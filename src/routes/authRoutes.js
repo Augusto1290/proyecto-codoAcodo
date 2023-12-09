@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-
-router.get("/login",(req,res)=>res.send("auth"))
-router.post("/login",(req,res)=>res.send("auth"))
-router.get("/register",(req,res)=>res.send("shop"))
-router.post("/register",(req,res)=>res.send("shop"))
-router.get("/logout",(req,res)=>res.send("shop"))
+const controller=require('../controllers/auth.controller')
+router.get("/login",controller.login)
+router.post("/login", controller.doLogin)
+router.get("/register",controller.register)
+router.post("/register",controller.doRegister)
+router.get("/logout",controller.logout)
 
 
 module.exports=router
