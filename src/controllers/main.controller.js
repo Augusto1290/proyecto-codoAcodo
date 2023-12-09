@@ -1,7 +1,7 @@
-const path=require('path');
+
 module.exports={
     home: (req, res) => {
-        res.render(path.resolve(__dirname,'../views/admin/admin.ejs'),{
+        res.render('index',{
             title:"Home"
         });
     },
