@@ -6,10 +6,14 @@ module.exports={
         })
     },
     item:(req, res)=>{
-        res.render(path.resolve(__dirname,'../views/shop/item.ejs'))
+        res.render(path.resolve(__dirname,'../views/shop/item.ejs'),{
+            title:"Item"
+        })
     },
     cart:(req, res)=>{
-        res.render(path.resolve(__dirname,'../views/shop/cart.ejs'))
+        res.render(path.resolve(__dirname,'../views/shop/cart.ejs'),{
+            title:"Carrito"
+        })
     },
 
     addItem:(req,res)=>res.send("Esta es la vista que agrega un  NUEVO ITEM"),
